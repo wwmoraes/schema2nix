@@ -1,0 +1,62 @@
+schema = 3
+
+[mod]
+  [mod.'github.com/davecgh/go-spew']
+    version = 'v1.1.1'
+    hash = 'sha256-nhzSUrE1fCkN0+RL04N4h8jWmRFPPPWbCuDc7Ss0akI='
+
+  [mod.'github.com/goccy/go-json']
+    version = 'v0.10.6'
+    hash = 'sha256-/REW1EDZ3Ta45hrDNR9YTIlhkxQQI8OeK5TxBNJ47Ho='
+
+  [mod.'github.com/google/jsonschema-go']
+    version = 'v0.4.2'
+    hash = 'sha256-kNExU/AI+CS27tQntXEpFqSio+HV2wzo2P458jqncOk='
+
+  [mod.'github.com/inconshreveable/mousetrap']
+    version = 'v1.1.0'
+    hash = 'sha256-XWlYH0c8IcxAwQTnIi6WYqq44nOKUylSWxWO/vi+8pE='
+
+  [mod.'github.com/kr/pretty']
+    version = 'v0.3.1'
+    hash = 'sha256-DlER7XM+xiaLjvebcIPiB12oVNjyZHuJHoRGITzzpKU='
+
+  [mod.'github.com/kr/text']
+    version = 'v0.2.0'
+    hash = 'sha256-fadcWxZOORv44oak3jTxm6YcITcFxdGt4bpn869HxUE='
+
+  [mod.'github.com/pmezard/go-difflib']
+    version = 'v1.0.0'
+    hash = 'sha256-/FtmHnaGjdvEIKAJtrUfEhV7EVo5A/eYrtdnUkuxLDA='
+
+  [mod.'github.com/rogpeppe/go-internal']
+    version = 'v1.9.0'
+    hash = 'sha256-XKmbu8l55XGrvC20j8jocpauwZsdbP83YAwH79BEAC4='
+
+  [mod.'github.com/spf13/cobra']
+    version = 'v1.10.2'
+    hash = 'sha256-nbRCTFiDCC2jKK7AHi79n7urYCMP5yDZnWtNVJrDi+k='
+
+  [mod.'github.com/spf13/pflag']
+    version = 'v1.0.9'
+    hash = 'sha256-YAjyYpq5BXCosVJtvYLWFG1t4gma2ylzc7ILLoj/hD8='
+
+  [mod.'github.com/stretchr/testify']
+    version = 'v1.11.1'
+    hash = 'sha256-sWfjkuKJyDllDEtnM8sb/pdLzPQmUYWYtmeWz/5suUc='
+
+  [mod.'github.com/wadey/gocovmerge']
+    version = 'v0.0.0-20160331181800-b5bfa59ec0ad'
+    hash = 'sha256-YbA4t26v6frdkh0uiXtmi8hiDYjR/FPBTxTwWlmfpwI='
+
+  [mod.'go.uber.org/goleak']
+    version = 'v1.3.0'
+    hash = 'sha256-uuwtET8BZ4zjKgSV92DN47k/PM2zYdnWl+naP2CfO5M='
+
+  [mod.'golang.org/x/tools']
+    version = 'v0.43.0'
+    hash = 'sha256-CqwqQl9inMT0/5LJ8hmV3HNR1XdI/xBFbi3305VJUlo='
+
+  [mod.'gopkg.in/yaml.v3']
+    version = 'v3.0.1'
+    hash = 'sha256-FqL9TKYJ0XkNwJFnq9j0VvJ5ZUU1RvH/52h/f5bkYAU='

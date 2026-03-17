@@ -1,0 +1,41 @@
+#:schema https://raw.githubusercontent.com/cocogitto/cocogitto/refs/heads/main/website/public/cog-schema.json
+
+branch_whitelist = ["main"]
+from_latest_tag = true
+post_bump_hooks = ["remake hooks/post-bump VERSION={{version}}"]
+pre_bump_hooks = ["remake hooks/pre-bump VERSION={{version}}"]
+
+[git_hooks]
+applypatch-msg.path = ".meta/git/hooks/applypatch-msg.sh"
+commit-msg.path = ".meta/git/hooks/commit-msg.sh"
+# fsmonitor-watchman.path = ".meta/git/hooks/fsmonitor-watchman.sh"
+# p4-changelist.path = ".meta/git/hooks/p4-changelist.sh"
+# p4-post-changelist.path = ".meta/git/hooks/p4-post-changelist.sh"
+# p4-pre-submit.path = ".meta/git/hooks/p4-pre-submit.sh"
+# p4-prepare-changelist.path = ".meta/git/hooks/p4-prepare-changelist.sh"
+# post-applypatch.path = ".meta/git/hooks/post-applypatch.sh"
+post-checkout.path = ".meta/git/hooks/post-checkout.sh"
+# post-commit.path = ".meta/git/hooks/post-commit.sh"
+# post-index-change.path = ".meta/git/hooks/post-index-change.sh"
+# post-merge.path = ".meta/git/hooks/post-merge.sh"
+# post-rewrite.path = ".meta/git/hooks/post-rewrite.sh"
+pre-applypatch.path = ".meta/git/hooks/pre-applypatch.sh"
+# pre-auto-gc.path = ".meta/git/hooks/pre-auto-gc.sh"
+pre-commit.path = ".meta/git/hooks/pre-commit.sh"
+pre-merge-commit.path = ".meta/git/hooks/pre-merge-commit.sh"
+pre-prepare-commit-msg.path = ".meta/git/hooks/prepare-commit-msg.sh"
+pre-push.path = ".meta/git/hooks/pre-push.sh"
+# pre-rebase.path = ".meta/git/hooks/pre-rebase.sh"
+# sendemail-validate.path = ".meta/git/hooks/sendemail-validate.sh"
+
+[changelog]
+owner = "wwmoraes"
+package_template = "package_remote"
+path = "CHANGELOG.md"
+remote = "github.com"
+repository = "schema2nix"
+template = "remote"
+
+[[changelog.authors]]
+signature = "William Artero"
+username = "wwmoraes"
