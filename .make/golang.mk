@@ -88,4 +88,4 @@ hooks/pre-bump::
 	goreleaser healthcheck
 
 hooks/post-bump::
-	env -u GOFLAGS op run -- goreleaser release --clean --release-notes CHANGELOG.md
+	env -u GOFLAGS ${SECRETS} goreleaser release --clean --release-notes CHANGELOG.md

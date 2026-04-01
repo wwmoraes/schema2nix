@@ -8,6 +8,12 @@ MAKEFLAGS += --no-builtin-variables
 
 export
 
+ifneq ($(shell which op),)
+SECRETS = op plugin run --
+else
+SECRETS =
+endif
+
 -include $(shell git ls-files '**/*.mk')
 
 .PHONY: all
@@ -31,6 +37,11 @@ release:
 
 .PHONY: test
 test:: ;
+
+.PHONY: push
+#: Builds and pushes derivations to cachix.
+push:
+	nix build --no-link --print-out-paths . | ${SECRETS} cachix push wwmoraes
 
 ## make magic, not war ;)
 
